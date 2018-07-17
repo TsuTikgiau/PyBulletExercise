@@ -3,6 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='bulletplay',
+    python_requires='==3.5.5',
     version='0.1.0',
     description='Toy project to learn PyBullet',
     author='Deyao Zhu',

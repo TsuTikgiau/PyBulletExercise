@@ -5,7 +5,7 @@ use
 ```
 pip install -e .
 ```
-to install this package. I only test it on Python 3.5
+to install this package. I only test it on Python 3.5.5.
 ## Example
 You can examples/destroy_towers.py to have a look
 
