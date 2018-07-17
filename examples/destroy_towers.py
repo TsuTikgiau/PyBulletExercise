@@ -3,6 +3,7 @@ import pybullet_data
 import time
 
 from bulletplay.objects.towers import build_cubic_tower, build_cylinder_tower
+from bulletplay.objects.ball import create_balls
 
 
 def main():
@@ -13,6 +14,7 @@ def main():
     planeId = p.loadURDF("plane.urdf")
     build_cubic_tower(0, 0)
     build_cylinder_tower(0, 1)
+    create_balls(0, -1, 0, 3)
 
     p.setGravity(0, 0, -10)
     p.setRealTimeSimulation(1)
