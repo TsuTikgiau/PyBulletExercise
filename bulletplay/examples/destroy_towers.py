@@ -2,7 +2,7 @@ import pybullet as p
 import pybullet_data
 import time
 
-from bulletplay.objects import build_cubic_tower, build_cylinder_tower
+from bulletplay.objects.towers import build_cubic_tower, build_cylinder_tower
 
 
 def main():
