@@ -13,13 +13,13 @@ class TestTower(unittest.TestCase):
 
     def test_cubic_tower(self):
         print('\ntest creation of cubic tower')
-        build_cubic_tower(0, 0)
+        build_cubic_tower(x=0, y=0, half_extents=1, num_cubic=3, mass=2)
         for t in range(5):
             p.stepSimulation()
 
     def test_cylinder_tower(self):
         print('\ntest creation of cylinder tower')
-        build_cylinder_tower(1, 1)
+        build_cylinder_tower(x=1, y=1, radius_range=(1, 0.1), height_range=(0.1, 1), num_cylinder=10, mass=2)
         for t in range(5):
             p.stepSimulation()
 

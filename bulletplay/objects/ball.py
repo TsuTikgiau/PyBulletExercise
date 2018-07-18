@@ -1,7 +1,7 @@
 import pybullet as p
 
 
-def create_balls(x, y, vx, vy, radius=0.1, mass=20):
+def create_ball(x, y, vx, vy, radius=0.1, mass=20):
     colBallId = p.createCollisionShape(p.GEOM_SPHERE, radius=radius)
     basePosition = [x, y, radius/2]
     baseOrientation = [0, 0, 0, 1]
